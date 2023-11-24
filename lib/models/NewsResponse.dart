@@ -1,20 +1,19 @@
+
 import 'SourcesResponse.dart';
 
 class NewsResponse {
   NewsResponse({
-      this.status,
-      this.code,
-      this.message,
-      this.totalResults, 
-      this.articles,
-
+    this.status,
+    this.code,
+    this.message,
+    this.totalResults,
+    this.articles,
   });
 
   NewsResponse.fromJson(dynamic json) {
     status = json['status'];
     code = json['code'];
     message = json['message'];
-
     totalResults = json['totalResults'];
     if (json['articles'] != null) {
       articles = [];
@@ -23,9 +22,10 @@ class NewsResponse {
       });
     }
   }
+
   String? status;
-  String?code;
-  String?message;
+  String? code;
+  String? message;
   int? totalResults;
   List<Articles>? articles;
 
@@ -34,14 +34,15 @@ class NewsResponse {
 
 class Articles {
   Articles({
-      this.source, 
-      this.author, 
-      this.title, 
-      this.description, 
-      this.url, 
-      this.urlToImage, 
-      this.publishedAt, 
-      this.content,});
+    this.source,
+    this.author,
+    this.title,
+    this.description,
+    this.url,
+    this.urlToImage,
+    this.publishedAt,
+    this.content,
+  });
 
   Articles.fromJson(dynamic json) {
     source = json['source'] != null ? Sources.fromJson(json['source']) : null;
@@ -53,6 +54,7 @@ class Articles {
     publishedAt = json['publishedAt'];
     content = json['content'];
   }
+
   Sources? source;
   String? author;
   String? title;
@@ -62,6 +64,4 @@ class Articles {
   String? publishedAt;
   String? content;
 
-
 }
-

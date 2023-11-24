@@ -3,9 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:magazinez/models/category_model.dart';
 
 class CategoryItem extends StatelessWidget {
-CategoryModel categoryModel;
+  CategoryModel categoryModel;
 
-CategoryItem(this.categoryModel);
+  CategoryItem(this.categoryModel);
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +14,13 @@ CategoryItem(this.categoryModel);
       child: Container(
         padding: EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: categoryModel.color,
-          borderRadius: BorderRadius.only(
-            topRight:Radius.circular(25) ,
-            bottomRight:categoryModel.index.isEven? Radius.circular(0):Radius.circular(25) ,
-            topLeft: Radius.circular(25),
-            bottomLeft:categoryModel.index.isOdd? Radius.circular(0):Radius.circular(25) ,
-          )
+            color: categoryModel.color,
+            borderRadius: BorderRadius.only(
+              topRight:Radius.circular(25) ,
+              bottomRight:categoryModel.index.isEven? Radius.circular(0):Radius.circular(25) ,
+              topLeft: Radius.circular(25),
+              bottomLeft:categoryModel.index.isOdd? Radius.circular(0):Radius.circular(25) ,
+            )
         ),
         child:
         Column(

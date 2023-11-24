@@ -1,8 +1,11 @@
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 
-import 'layout/home_layout.dart';
+import 'layout/home.dart';
+import 'observer.dart';
 
 void main() {
+  Bloc.observer=MyBlocObserver();
   runApp(const MyApp());
 }
 
@@ -15,7 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: HomeLayout.routeName,
-      routes: {HomeLayout.routeName: (context) => HomeLayout()},
+      routes: {
+        HomeLayout.routeName: (context) => HomeLayout(),
+      },
     );
   }
 }

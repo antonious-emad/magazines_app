@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class DrawerTab extends StatelessWidget {
   Function onClick;
-   DrawerTab(this.onClick,{super.key});
+  DrawerTab(this.onClick,{super.key});
   static int CAT_ID=1;
   static int SET_ID=2;
 
@@ -20,11 +20,11 @@ class DrawerTab extends StatelessWidget {
               color: Colors.green,
               height: 100,
               width: double.infinity,
-               child: Center(child: Text("News App!",style: GoogleFonts.poppins(fontSize: 24,fontWeight: FontWeight.w700,color: Colors.white))),
+              child: Center(child: Text("News App!",style: GoogleFonts.poppins(fontSize: 24,fontWeight: FontWeight.w700,color: Colors.white))),
             ),
             InkWell(
               onTap: () {
-              onClick(CAT_ID);
+                onClick(CAT_ID);
               },
               child: Padding(
                 padding: const EdgeInsets.all(18.0),

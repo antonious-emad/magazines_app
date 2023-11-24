@@ -16,7 +16,6 @@ class CategoryModel{
       CategoryModel("Business", "business","assets/images/bussines.png", Color(0xffcf7e48),2),
       CategoryModel("Environment", "entertainment","assets/images/environment.png",Color(0xff4882cf),3),
       CategoryModel("Science", "science","assets/images/science.png", Color(0XFFF2D352),6),
-      // CategoryModel("Technology", "technology","assets/images/environment.png", Colors.lightGreen,7),
     ];
   }
 }

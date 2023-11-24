@@ -1,8 +1,8 @@
 class SourcesResponse {
   SourcesResponse({
     this.status,
-    this.code,
     this.message,
+    this.code,
     this.sources,
   });
 

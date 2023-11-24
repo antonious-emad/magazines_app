@@ -1,6 +1,5 @@
- import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-const Color primary = Colors.blue;
- const Color mint = Color(0xFFDFECDB);
- const Color darkPrimary = Color(0xFF141A2E);
- const Color yellow = Color(0xFFFACC1D);
+Color primaryColor = Colors.blue;
+Color blackColor = const Color(0xFF242424);
+Color mintColor = const Color(0xFFDFECDB);
